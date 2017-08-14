@@ -1,0 +1,48 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+       xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<bean id="collectionsContainer" class="P05.CollectionsContainer">
+
+    <property name="list">
+        <list>
+            <value>India</value>
+            <value>Pakistan</value>
+            <value>USA</value>
+            <value>Poland</value>
+        </list>
+    </property>
+
+    <property name="set">
+        <set>
+            <value>Kekistan</value>
+            <value>Armenia</value>
+            <value>Cambodia</value>
+            <value>North Korea</value>
+        </set>
+    </property>
+
+    <property name="map">
+        <map>
+            <entry key="1" value="one" />
+            <entry key="2" value="two" />
+            <entry key="3" value="three" />
+            <entry key="4" value="four" />
+        </map>
+    </property>
+
+    <property name="props">
+        <props>
+            <prop key="isValid">True</prop>
+            <prop key="resolution">1600:900</prop>
+            <prop key="isSingleton">False</prop>
+        </props>
+    </property>
+
+</bean>
+
+
+</beans>
